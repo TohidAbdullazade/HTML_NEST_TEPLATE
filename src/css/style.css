@@ -1386,6 +1386,12 @@ main {
     border: 1px solid var(--light-gray);
     border-radius: 20px;
     position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cart-item-1:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
 }
 
 .cart-item-1 .top {
@@ -1428,7 +1434,7 @@ main {
     background: var(--light-blue);
 }
 
-.cart-item-1 .top .sup-top .last-tag {
+.cart-item-1 .top .sup-top .tag-8-yellow {
     background: #BC911A;
 }
 
@@ -1533,12 +1539,13 @@ main {
     font-weight: 600;
     padding: 0 3px;
 }
-.value-section .cost-area #second-price{
+
+.value-section .cost-area #second-price {
     color: var(--light-gray);
-        text-decoration: line-through;
-        font-family: var(--quicksand);
-        font-size: 18px;
-        font-weight: 600;
+    text-decoration: line-through;
+    font-family: var(--quicksand);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* note:Main-Section-End */
