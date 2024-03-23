@@ -1691,6 +1691,9 @@ main {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
+.deals-content .bottom .add-button button i {
+    color: var(--light-green);
+}
 
 .deals-content .bottom .add-button button span a {
     color: var(--light-green);
