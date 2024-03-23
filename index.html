@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home 3 – Nest Task</title>
+  <!-- note: FONT-AWESOME CDN LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- note: FONT-AWESOME CDN LINK -->
+  <link rel="icon" href="src/assets/icon/favicon.png">
+
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- note: EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- note: EXTERNAL CSS FILE -->
+</head>
+
+<body>
+  <!-- note: Header-Section -->
+  <header>
+    <div class="top-header">
+      <div class="info-section">
+        <ul>
+          <li><a href="#" id="top-first-link">About Us</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">WhisList</a></li>
+          <li><a href="#">Order Tracking</a></li>
+        </ul>
+      </div>
+      <div class="slider-section">
+        <div class="slider-content">
+          <div class="slider-text"><a href="#">100% Secure delivery without contacting the courier</a></div>
+          <div class="slider-text"><a href="#">Supper Value Deals - Save more with coupons</a></div>
+          <div class="slider-text"><a href="#">Trendy 25silver jewelry, save up 35% off today</a></div>
+        </div>
+      </div>
+      <div class="call-section">
+        <div class="full-list">
+          <div class="left-section">
+            <span>Need help? Call Us:
+              <a href="#">+1800900122</a>
+            </span>
+          </div>
+          <div class="lang-section">
+            <ul>
+              <li class="top-menu">
+                English
+                <span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">French</a>
+
+                  </li>
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">Germany</a>
+                  </li>
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">Russian</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="inr-section">
+            <ul>
+              <li class="top-menu">
+                INR
+                <span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">USD</a>
+
+                  </li>
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">MBD</a>
+                  </li>
+                  <li>
+                    <img src="src/assets/icon/flag.png" width="15" height="10" alt="">
+                    <a href="#">EU</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-header">
+      <div class="left-section">
+        <div class="logo">
+          <img height="52" width="170" src="src/assets/img/logo.png">
+        </div>
+      </div>
+      <div class="form-section">
+        <form autocomplete="off">
+          <div class="input-box">
+            <input type="text" name="searc-input" placeholder="Search for products...">
+            <button>Search</button>
+          </div>
+        </form>
+        <div class="button">
+          <a href="#">Became Vendor
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+      <div class="icon-container">
+        <div class="recycle-icon-container">
+          <div class="left">
+            <span>0</span>
+            <i class="fa-solid fa-recycle"></i>
+          </div>
+          <div class="right">
+            <a href="#">Compare</a>
+          </div>
+        </div>
+        <div class="whislist-icon-container">
+          <div class="left">
+            <span>0</span>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="right">
+            <a href="#">Whislist</a>
+          </div>
+        </div>
+        <div class="shopcar-icon-container">
+          <div class="left">
+            <span>0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="right">
+            <a href="#">Cart</a>
+          </div>
+        </div>
+        <div class="user-icon-container">
+          <div class="left">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="right">
+            <a href="#">Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="left-section">
+        <span>
+          <i class="fa-solid fa-border-all" style="font-size: 20px; "></i>
+          <a href="#">Browse All Categories
+            <i id="angle-arrow" class="fa-solid fa-angle-down"></i>
+          </a>
+        </span>
+        <div class="second-left">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <a href="">Hot Deals</a>
+        </div>
+      </div>
+      <div class="right-section">
+        <nav>
+          <ul>
+            <li class="home-list">
+              <a href="#">Home
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="home-drop-down">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+                <li><a href="#">Home 4</a></li>
+                <li><a href="#">Home 5</a></li>
+                <li><a href="#">Home 6</a></li>
+                <li><a href="#">Home 7</a></li>
+                <li><a href="#">Home 8</a></li>
+                <li><a href="#">Home 9</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">About
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="shop-list">
+              <a href="#">Shop
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="shop-mega-menu">
+                  <div class="shop-mega-menu-items row-1">
+                    <h4>Product Style</h4>
+                    <ul>
+                      <li><a href="#">Product Style One</a></li>
+                      <li><a href="#">Product Style Two</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Product Style Four</a></li>
+                      <li><a href="#">Product Load More</a></li>
+                      <li><a href="#">Product Infinite Scrolling</a></li>
+                      <li><a href="#">Shop Wide</a></li>
+                      <li><a href="#">Shop With Left Sidebar</a></li>
+                      <li><a href="#">Shop With Right Sidebar</a></li>
+                      <li><a href="#">Shop List Left Sidebar</a></li>
+                      <li><a href="#">Shop List Right Sidebar</a></li>
+                    </ul>
+                  </div>
+                  <div class="shop-mega-menu-items row-2">
+                    <h4>Product Single Single Style</h4>
+                    <ul>
+                      <li><a href="#">Product Single Style One</a></li>
+                      <li><a href="#">Product Single Style Two</a></li>
+                      <li><a href="#">Product Single Style Tree</a></li>
+                      <li><a href="#">Product Single Style Four</a></li>
+                    </ul>
+                    <h4 class="second-title">Product Single Features</h4>
+                    <ul>
+                      <li><a href="#">Product With Deals Date</a></li>
+                      <li><a href="#">Product With Message Box</a></li>
+                      <li><a href="#">Product With Video Style One</a></li>
+                      <li><a href="#">Product With Video Style Two</a></li>
+                      <li><a href="#">Product With Advertisement</a></li>
+                    </ul>
+                  </div>
+                  <div class="shop-mega-menu-items row-3">
+                    <h4>Product Types</h4>
+                    <ul>
+                      <li><a href="#">Simple Product</a></li>
+                      <li><a href="#">Grouped Product</a></li>
+                      <li><a href="#">External/Affiliate product</a></li>
+                      <li><a href="#">Variable product</a></li>
+                      <li><a href="#">Frequently Bought Together </a></li>
+                      <li><a href="#">Product With No Sidebar</a></li>
+                      <li><a href="#">Product With Left Sidebar</a></li>
+                    </ul>
+                  </div>
+                  <div class="shop-mega-menu-items row-4">
+                    <div class="content">
+                      <div class="img">
+                        <img width="100%" height="100%" src="src/assets/img/dropdown-img.png">
+                      </div>
+                      <div class="top">
+                        <h4>Organic</h4>
+                        <p>Everyday Fresh &
+                          Clean with Our
+                          Products</p>
+                      </div>
+                      <a href="#">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="vendors-top">
+              <a href="#">Vendors
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="vendors-submenu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Store Listening</a></li>
+                <li><a href="#">Store Details</a></li>
+                <li><a href="#">My Orders</a></li>
+              </ul>
+            </li>
+            <li class="mega-menu-top">
+              <a href="#">Mega Menu
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="mega-menu-container">
+                <div class="mega-menu-item item-1">
+                  <h4>Products 10% Discount</h4>
+                  <ul class="mega-menu-list">
+                    <li><a href="#">Canada Dry Ginger Ale – 2 L Bottle</a></li>
+                    <li><a href="#">Cauliflower Species Brassica the genus</a></li>
+                    <li><a href="#">Nestle Original Mate Coffee Creamer</a></li>
+                    <li><a href="#">Onion hybrid varieties genus Allium</a></li>
+                    <li><a href="#">Seeds of Change Organic Red Rice</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-item item-2">
+                  <h4>Products 20% Discount</h4>
+                  <ul class="mega-menu-list">
+                    <li><a href="#">All Natural Style Chicken Meatballs</a></li>
+                    <li><a href="#">Cauliflower Species Brassica the genus</a></li>
+                    <li><a href="#">Nestle Original Mate Coffee Creamer</a></li>
+                    <li><a href="#">Onion hybrid varieties genus Allium</a></li>
+                    <li><a href="#">Seeds of Change Organic Red Rice</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-item item-3">
+                  <h4>Products 30% Discount</h4>
+                  <ul class="mega-menu-list">
+                    <li><a href="#">Canada Dry Ginger Ale – 2 L Bottle</a></li>
+                    <li><a href="#">Cauliflower Species Brassica the genus</a></li>
+                    <li><a href="#">Nestle Original Mate Coffee Creamer</a></li>
+                    <li><a href="#">Onion hybrid varieties genus Allium</a></li>
+                    <li><a href="#">Seeds of Change Organic Red Rice</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-item item-4">
+                  <div class="content">
+                    <div class="img">
+                      <img width="100%" height="100%" src="src/assets/img/mega-menu-img.png">
+                    </div>
+                    <div class="bottom">
+                      <h4>Organic</h4>
+                      <p>Everyday Fresh &
+                        Clean with Our
+                        Products</p>
+                    </div>
+                    <a href="#">Shop Now
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="blog-menu-top">
+              <a href="#">Blog
+                <i class="fa-solid fa-angle-down"></i>
+
+              </a>
+              <ul class="blog-sub-menu">
+                <li><a href="#">Blog Default</a></li>
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Blog List</a></li>
+                <li><a href="#">Blog Big</a></li>
+                <li><a href="#">Blog Wide</a></li>
+                <li class="blog-sub-menu-right-top">
+                  <a href="#">Single Blog
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="blog-rigt-sub-menu">
+                    <li><a href="#">With Right Sidebar</a></li>
+                    <li><a href="#">With Left Sidebar</a></li>
+                    <li><a href="#">With No Sidebar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="pages-menu-top">
+              <a href="#">Pages
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="pages-sub-menu">
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Shop Cart</a></li>
+                <li><a href="#">Shop Compare</a></li>
+                <li><a href="#">Shop Whislist</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund and Returns Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Content <i class="fa-solid fa-angle-down"></i> </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- note: Header-Section -->
+
+  <!-- note:Main-Section -->
+
+  <main>
+    <section class="top-section">
+      <div class="left-side">
+        <div class="categorie-container">
+          <h2>Category</h2>
+          <div class="product-list first-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-2.png">
+              <div class="title-area">
+                <a href="#">Baking material</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>7</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-3.1.png">
+              <div class="title-area bread">
+                <a href="#">Bread and Juice</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>5</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-3.png">
+              <div class="title-area">
+                <a href="#">Clothing & beauty</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>2</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-1.png">
+              <div class="title-area">
+                <a href="#">Deals Of The Day</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>4</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/fruit.png">
+              <div class="title-area">
+                <a href="#">Fresh Fruit</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>8</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-8.png">
+              <div class="title-area">
+                <a href="#">Fresh Seafood</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>5</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/category-6.png">
+              <div class="title-area">
+                <a href="#">Milks and Dairies</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>3</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/vegetable.png">
+              <div class="title-area">
+                <a href="#">Vegetables</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>3</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/drinks.png">
+              <div class="title-area">
+                <a href="#">Wines & Drinks</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>1</span>
+            </div>
+          </div>
+          <div class="product-list last-list">
+            <div class="left-area">
+              <img width="30" height="30" src="src/assets/img/woocommerce-placeholder-300x300.-uncategoriepng.png">
+              <div class="title-area">
+                <a href="#">Uncategorized</a>
+              </div>
+            </div>
+            <div class="count-area">
+              <span>9</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tag-container">
+          <h4>Product Tags</h4>
+          <div class="tag-container">
+            <div class="row-1">
+              <div class="tag-1">
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Brown</a>
+                </span>
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Coffees</a>
+                </span>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="tag-2">
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Hoodo Foods</a>
+                </span>
+              </div>
+            </div>
+            <div class="row-3">
+              <div class="tag-3">
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Meats</a>
+                </span>
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Organic</a>
+                </span>
+              </div>
+            </div>
+            <div class="row-4">
+              <div class="tag-4">
+                <span>
+                  <i class="fa-solid fa-xmark"></i>
+                  <a href="#">Snack</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-container">
+          <h4>Products</h4>
+          <div class="products">
+            <div class="left-side">
+              <img width="44" height="44" src="src/assets/img/cake.jpg" alt="">
+            </div>
+            <div class="right-side">
+              <div class="top"><a href="#">Organic Cage Grade A Large Eggs</a></div>
+              <div class="bottom">
+                <span class="deleted-price">$24.00</span>
+                <span>$21.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="left-side">
+              <img width="44" height="44" src="src/assets/img/nature.jpg" alt="">
+            </div>
+            <div class="right-side">
+              <div class="top"><a href="#">Naturally Flavored Cinnamon Vanilla
+                </a></div>
+              <div class="bottom">
+                <span class="deleted-price">$55.00</span>
+                <span>$51.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="left-side">
+              <img width="44" height="44" src="src/assets/img/seeds.jpg" alt="">
+            </div>
+            <div class="right-side">
+              <div class="top">
+                <a href="#">Seeds of Change Organic Watermelon</a>
+                <div class="rating">
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+
+
+              </div>
+              <div class="bottom">
+                <span class="deleted-price">$66.00</span>
+                <span>$61.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="left-side">
+              <img width="44" height="44" src="src/assets/img/dried-fruit.jpg" alt="">
+            </div>
+            <div class="right-side">
+              <div class="top"><a href="#">Dried fruit: apricots, figs, prunes</a></div>
+              <div class="bottom">
+                <span class="deleted-price">$76.00</span>
+                <span>$56.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="left-side">
+              <img width="44" height="44" src="src/assets/img/ice-cream.jpg" alt="">
+            </div>
+            <div class="right-side">
+              <div class="top">
+                <a href="#">Pre-portioned, low-fat ice cream yogurt
+                </a>
+                <div class="rating">
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                  <i class="fa-regular fa-star" style="color: yellow;"></i>
+                </div>
+              </div>
+              <div class="bottom">
+                <span class="deleted-price">$99.00</span>
+                <span>$79.00</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="banner-container">
+          <div class="content">
+            <div class="img">
+              <img src="src/assets/img/juice.png" width="282" height="298" alt="">
+            </div>
+            <div class="title">
+              <span>Organic</span>
+            </div>
+            <div class="info">
+              <h4>
+                Save 17% on <span>Organic</span> Juice
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <img width="100%" src="src/assets/img/slider-img-2.png">
+
+    </section>
+
+
+
+
+  </main>
+
+
+  <!-- note:Main-Section-End -->
+
+
+
+
+</html>
