@@ -456,6 +456,7 @@ body {
     height: 85px;
     border-bottom: 1px solid var(--light-gray);
 
+
 }
 
 .bottom-header .left-section {
@@ -752,7 +753,8 @@ nav .home-list:hover .home-drop-down {
     background: var(--white);
     padding: 20px;
     border: 1px solid var(--light-gray);
-    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     grid-template-columns: repeat(4, 1fr);
     opacity: 0;
     visibility: hidden;
@@ -2767,6 +2769,7 @@ footer .footer-center .left-side {
     color: var(--light-green);
     transition: all .3s ease-in-out;
 }
+
 .right-tel-section .tel-content a:hover {
     color: var(--dark-red);
 }
@@ -2775,6 +2778,36 @@ footer .footer-center .left-side {
     font-size: 12px;
     font-family: var(--lato);
     color: var(--light-black);
+}
+
+.float-button {
+    width: 30px;
+    height: 30px;
+    background: var(--white);
+    border: 1px solid var(--dark-black);
+    border-radius: 50%;
+    z-index: 1000;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 44px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+
+}
+
+.float-button i {
+    color: var(--dark-black);
+    transition: all .3s ease-in-out;
+}
+
+.float-button:hover i {
+    color: var(--white);
+}
+
+.float-button:hover {
+    background: var(--light-green);
+    transform: translateY(-10px);
 }
 
 /* note: Footer-Section-End */
