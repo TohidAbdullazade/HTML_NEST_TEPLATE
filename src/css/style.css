@@ -1116,9 +1116,6 @@ main {
     height: 38px;
     width: 93px;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
     transition: all .3s ease-in-out;
     cursor: pointer;
@@ -1173,9 +1170,7 @@ main {
     height: 38px;
     width: 93px;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
