@@ -1129,6 +1129,7 @@ main {
     transform: translateY(-5px);
 }
 
+
 .product-tag-container .tag-container-top .tag span {
     display: inline-block;
     width: 100%;
@@ -2769,8 +2770,6 @@ footer .footer-center .left-side {
     margin-top: 44px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-
-
 
 }
 
